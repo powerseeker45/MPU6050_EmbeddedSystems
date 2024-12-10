@@ -130,8 +130,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ret=MPU6050_ReadAllData(&hi2c2, accel, gyro, &temp);
-	  HAL_Delay(2000);
+	  ret=MPU6050_GetScaledData(&hi2c2, accel, gyro, &temp);
+	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

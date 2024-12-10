@@ -3,3 +3,4 @@
 ../Core/Src/mpu6050.c:27:19:MPU6050_ReadGyroscope	2
 ../Core/Src/mpu6050.c:38:19:MPU6050_ReadTemperature	2
 ../Core/Src/mpu6050.c:47:19:MPU6050_ReadAllData	2
+../Core/Src/mpu6050.c:62:19:MPU6050_GetScaledData	3

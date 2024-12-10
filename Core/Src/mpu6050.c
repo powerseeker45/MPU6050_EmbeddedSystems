@@ -59,4 +59,24 @@ HAL_StatusTypeDef MPU6050_ReadAllData(I2C_HandleTypeDef *hi2c, int16_t *accel, i
     return status;
 }
 
+HAL_StatusTypeDef MPU6050_GetScaledData(I2C_HandleTypeDef *hi2c, int16_t *accel, int16_t *gyro, int16_t *temp) {
+    uint8_t i=0;
+    HAL_StatusTypeDef status;
+    status=MPU6050_ReadAllData(hi2c, accel, gyro, temp);
+    if (status==HAL_OK) {
+        // Accelerometer
+    	for (i=0;i<3;i++)
+    	{
+    		accel[i]/=ACCEL_SCALE;
+    		gyro[i]/=GYRO_SCALE;
+    	}
+
+
+        // Temperature
+        *temp = *temp / 340.0 + 36.53;
+
+    }
+    return status;
+
+}
 

@@ -3,3 +3,4 @@
 ../Core/Src/mpu6050.c:27:19:MPU6050_ReadGyroscope	48	static
 ../Core/Src/mpu6050.c:38:19:MPU6050_ReadTemperature	40	static
 ../Core/Src/mpu6050.c:47:19:MPU6050_ReadAllData	56	static
+../Core/Src/mpu6050.c:62:19:MPU6050_GetScaledData	32	static

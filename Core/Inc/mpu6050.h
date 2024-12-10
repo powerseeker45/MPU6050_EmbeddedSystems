@@ -20,6 +20,10 @@
 #define MPU6050_REG_TEMP_OUT_H   0x41
 #define MPU6050_REG_WHO_AM_I     0x75
 
+//MPU6050 full scale range
+#define ACCEL_SCALE 250.0 // Change based on your full-scale range
+#define GYRO_SCALE  131.0   // Change based on your full-scale range
+
 // MPU6050 Initialization
 void MPU6050_Init(I2C_HandleTypeDef *hi2c);
 
