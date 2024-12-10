@@ -1,0 +1,5 @@
+../Core/Src/mpu6050.c:11:6:MPU6050_Init	40	static
+../Core/Src/mpu6050.c:16:19:MPU6050_ReadAccelerometer	48	static
+../Core/Src/mpu6050.c:27:19:MPU6050_ReadGyroscope	48	static
+../Core/Src/mpu6050.c:38:19:MPU6050_ReadTemperature	40	static
+../Core/Src/mpu6050.c:47:19:MPU6050_ReadAllData	56	static
